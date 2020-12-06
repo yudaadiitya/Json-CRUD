@@ -1,0 +1,29 @@
+[
+   {
+      "id": 1,
+      "string": "yuda",
+      "integer": "123",
+      "float": "232.641",
+      "date": "12 juni 2012",
+      "boolean": "true",
+      "displayedDate": "undefined undefined 12 juni 2012"
+   },
+   {
+      "id": 2,
+      "string": "Testing Dataaaa",
+      "integer": "12",
+      "float": "232.64",
+      "date": "12 juni 2012",
+      "boolean": "true",
+      "displayedDate": "undefined undefined 12 juni 2012"
+   },
+   {
+      "id": 3,
+      "string": "Coba",
+      "integer": "1933",
+      "float": "19.33",
+      "date": "12 juni 2012",
+      "boolean": "false",
+      "displayedDate": "undefined undefined 12 juni 2012"
+   }
+]
