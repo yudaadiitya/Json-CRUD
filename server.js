@@ -20,17 +20,17 @@ app.use(bp.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 //------------- List Table
 app.get('/', (req, res) => {
-    res.render('index', { data: data })
+    res.render('pages/index', { data: data })
 })
 
 app.post('/search', function (req, res, next) {
     const {id, string, integer, float, boolean} = req.body;
-    res.render('index', { data: data });
+    res.render('pages/index', { data: data });
 });
 
 // ----------- Add
 app.get('/add', (req, res) => {
-    res.render('add', { title: 'Add Data' });
+    res.render('pages/add', { title: 'Add Data' });
 });
 
 app.post('/add', (req, res) => {
@@ -49,7 +49,7 @@ app.get('/edit/:id', (req, res) => {
             index = i + 1;
             break;
         }
-    } res.render('edit', { title: 'Edit Data', item: data[index] })
+    } res.render('pages/edit', { title: 'Edit Data', item: data[index] })
 })
 
 app.post('/edit/:id', (req, res) => {
